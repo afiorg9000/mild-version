@@ -21,40 +21,43 @@ export const BookCover = ({ onStartReading }: BookCoverProps) => {
         <div className="absolute bottom-8 right-8 w-16 h-16 border-b-2 border-r-2 border-primary-foreground/30"></div>
         
         {/* Content */}
-        <div className="relative h-full flex flex-col items-center justify-center p-16 text-center">
-          {/* Title */}
-          <h1 className="font-serif text-6xl font-bold text-primary-foreground mb-6 leading-tight tracking-wide">
-            Collected
-            <br />
-            <span className="italic font-light">Thoughts</span>
-          </h1>
+        <div className="relative h-full flex flex-col items-center justify-center p-12 text-left max-w-md mx-auto">
+          {/* Preface Header */}
+          <h2 className="font-serif text-3xl font-bold text-primary-foreground mb-8 text-center">
+            Preface
+          </h2>
           
-          {/* Decorative line */}
-          <div className="w-32 h-0.5 bg-primary-foreground/50 mb-8"></div>
-          
-          {/* Subtitle */}
-          <p className="font-serif text-2xl text-primary-foreground/90 mb-12 italic leading-relaxed">
-            Written by the people
-            <br />
-            you've touched
-          </p>
-          
-          {/* Year */}
-          <div className="font-serif text-3xl text-primary-foreground/80 font-light mb-16">
-            2025
+          {/* Preface Text */}
+          <div className="font-serif text-primary-foreground/95 leading-relaxed mb-12 space-y-4">
+            <p className="text-lg">My dearest Ryan,</p>
+            
+            <p className="text-base">
+              What you're about to read is a collection of thoughts that represent just a fraction of the lives you've touched and the connections you've made. Each page holds the genuine affection and admiration of someone whose world is brighter because, in so many ways, you've been a steady ground to lean on, a dyngus to laugh with, and a catalyst for growth and joy in their lives.
+            </p>
+            
+            <p className="text-base">
+              I made this for you so you can look back someday — to laugh or cry at the absurdity and sweetness of the responses, to see the friends who remain close and remember those who've drifted. I want to give you everything, and part of that is a sense of love and belonging. So here's a little dopamine boost to help you feel just how cherished you are.
+            </p>
+            
+            <div className="text-right mt-8">
+              <p className="text-base">With all my love, and my endless will to make you feel like the most special boy in the world,</p>
+              <p className="text-lg font-medium mt-2">Sofia</p>
+            </div>
           </div>
           
           {/* Start Reading Button */}
-          <button
-            onClick={() => {
-              console.log("Button clicked in BookCover");
-              onStartReading();
-            }}
-            className="relative z-10 bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8 py-4 rounded-lg text-lg font-serif shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 flex items-center gap-3"
-          >
-            <BookOpen className="w-5 h-5 transition-transform hover:rotate-12" />
-            Start Reading
-          </button>
+          <div className="text-center">
+            <button
+              onClick={() => {
+                console.log("Button clicked in BookCover");
+                onStartReading();
+              }}
+              className="relative z-10 bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8 py-4 rounded-lg text-lg font-serif shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 flex items-center gap-3"
+            >
+              <BookOpen className="w-5 h-5 transition-transform hover:rotate-12" />
+              Start Reading
+            </button>
+          </div>
         </div>
         
         {/* Book spine shadow effect */}
