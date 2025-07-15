@@ -136,10 +136,19 @@ export const responses: Response[] = [
 
 export const chapters = [
   {
-    id: 'cover',
-    title: 'Cover',
-    subtitle: 'The Beginning',
-    content: null
+    id: 'preface',
+    title: 'Preface',
+    subtitle: 'A Message for You',
+    content: [{
+      name: "Sofia",
+      impact: "My dearest Ryan,\n\nWhat you're about to read is a collection of thoughts that represent just a fraction of the lives you've touched and the connections you've made. Each page holds the genuine affection and admiration of someone whose world is brighter because, in so many ways, you've been a steady ground to lean on, a dyngus to laugh with, and a catalyst for growth and joy in their lives.\n\nI made this for you so you can look back someday — to laugh or cry at the absurdity and sweetness of the responses, to see the friends who remain close and remember those who've drifted. I want to give you everything, and part of that is a sense of love and belonging. So here's a little dopamine boost to help you feel just how cherished you are.\n\nWith all my love, and my endless will to make you feel like the most special boy in the world,\n\nSofia",
+      unforgettableMemory: "",
+      whatToHear: "",
+      loveAdmire: "",
+      growthArea: "",
+      yearVision: "",
+      reflections: ""
+    }]
   },
   {
     id: 'impact',
