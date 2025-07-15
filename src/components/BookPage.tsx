@@ -40,6 +40,8 @@ const getContentForChapter = (chapter: any, response: Response) => {
 
 export const BookPage = ({ chapter, pageIndex, totalPages, onPrevious, onNext }: BookPageProps) => {
   if (chapter.id === 'final') {
+    const finalContent = chapter.content?.[0]?.impact || '';
+    
     return (
       <div className="relative w-full h-screen flex">
         {/* Left Page */}
@@ -49,20 +51,11 @@ export const BookPage = ({ chapter, pageIndex, totalPages, onPrevious, onNext }:
             <h2 className="font-serif text-3xl text-foreground mb-12 italic">{chapter.subtitle}</h2>
             
             <div className="space-y-6 text-lg leading-relaxed">
-              <p className="font-serif">My dearest Ryan,</p>
-              
-              <div className="story-quote">
-                <p>This collection of thoughts represents just a fraction of the lives you've touched and the hearts you've changed. Each page holds the genuine affection and admiration of someone whose world is brighter because you're in it.</p>
+              <div className="story-quote text-left">
+                <p className="whitespace-pre-line">
+                  {finalContent}
+                </p>
               </div>
-              
-              <p>As you turn 30, know that your impact ripples far beyond what you can see. You've been a catalyst for growth, joy, and meaningful connection in so many lives.</p>
-              
-              <p>Here's to another year of your beautiful, chaotic, brilliant self making the world a better place.</p>
-              
-              <p className="font-serif italic pt-4">
-                With all my love,<br />
-                Sofia ❤️
-              </p>
             </div>
           </div>
         </div>
