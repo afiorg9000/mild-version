@@ -45,17 +45,17 @@ export const BookPage = ({ chapter, pageIndex, totalPages, onPrevious, onNext }:
     return (
       <div className="relative w-full h-screen flex">
         {/* Left Page */}
-        <div className="w-1/2 h-full paper-texture border-r border-border/30 p-16 flex flex-col justify-center">
-          <div className="max-w-md mx-auto text-center">
-            <div className="chapter-number text-4xl mb-8">{chapter.title}</div>
-            <h2 className="font-serif text-3xl text-foreground mb-12 italic">{chapter.subtitle}</h2>
-            
-            <div className="space-y-6 text-lg leading-relaxed">
-              <div className="story-quote text-left">
-                <p className="whitespace-pre-line">
-                  {finalContent}
-                </p>
-              </div>
+        <div className="w-1/2 h-full paper-texture border-r border-border/30 p-12 flex flex-col">
+          <div className="text-center mb-8">
+            <div className="chapter-number text-3xl mb-4">{chapter.title}</div>
+            <h2 className="font-serif text-2xl text-foreground mb-8 italic">{chapter.subtitle}</h2>
+          </div>
+          
+          <div className="flex-1 overflow-y-auto max-w-lg mx-auto">
+            <div className="story-quote text-left">
+              <p className="text-base leading-relaxed whitespace-pre-line">
+                {finalContent}
+              </p>
             </div>
           </div>
         </div>
