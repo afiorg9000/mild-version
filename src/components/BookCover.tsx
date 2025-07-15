@@ -45,19 +45,16 @@ export const BookCover = ({ onStartReading }: BookCoverProps) => {
           </div>
           
           {/* Start Reading Button */}
-          <Button
+          <button
             onClick={() => {
               console.log("Button clicked in BookCover");
               onStartReading();
             }}
-            size="lg"
-            variant="book"
-            className="group/btn relative overflow-hidden px-8 py-4 text-lg font-serif animate-float"
+            className="relative z-10 bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8 py-4 rounded-lg text-lg font-serif shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 flex items-center gap-3"
           >
-            <BookOpen className="w-5 h-5 mr-3 transition-transform group-hover/btn:rotate-12" />
+            <BookOpen className="w-5 h-5 transition-transform hover:rotate-12" />
             Start Reading
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-1000"></div>
-          </Button>
+          </button>
         </div>
         
         {/* Book spine shadow effect */}
