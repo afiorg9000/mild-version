@@ -196,6 +196,15 @@ export const chapters = [
     id: 'final',
     title: 'Final Message',
     subtitle: 'From Sofia',
-    content: null
+    content: [{
+      name: "Sofia",
+      impact: "You've just read through how others see you, how you live in their lives. now i want to tell you how you live in mine.\n\n**My clumsy, sweet &  beautiful Ryan**\n\nIt blows me away how you carry the weight of everything you're working on and not lose sight of your own well-being, or of this love, this moment we're in that's so worth protecting. When I drop into just how precarious this world is, how close we stand to the edge of everything we know, how the future hangs by threads too fine for most to see, my chest gets overwhelmingly heavy, it takes my tears and my breath away, being with the vastness of possibility stretching before us, how the the future projects to unfold in countless branching paths, some bright, some dark. I don't know what comes next. And yet… here I am, here we are, alive in this moment, moving through it together. Whatever the future holds, whether it's decades of gradual progress or humanity has only a few chapters left to write, I'm grateful we get to experience history together in this chapter of our lives. Being a home for each other through all the tension and stress, sharing tears, healing, laughter, and appreciation for it all. It just feels so right somehow.\n\nYou remind me why living matters. Why my own health, my rest, and a love like ours are worth fighting for. You meet parts of me that no one else ever has, with such real love, care, and acceptance. And even if the little light we've been working so hard to keep alive someday flickers out, I'll still be glad we were here. That we chose to keep fighting, working on ourselves, on each other, on our friends, our work, our words, loving passionately and intensely, striving to overcome our own limitations. The fact that you exist means I had never really been alone in this, I just didn't know it yet. Your empathy, your compassion, your will to power, your commitment, your strength, your drive to push through to the other side, all of these will always stand as an exemplar of the kind of human others should strive to be. Everything in me wants to keep growing, creating, and striving alongside you for a future worth creating. Whatever comes, I'm so grateful we have what we have now.\n\n💙",
+      unforgettableMemory: "",
+      whatToHear: "",
+      loveAdmire: "",
+      growthArea: "",
+      yearVision: "",
+      reflections: ""
+    }]
   }
 ];
