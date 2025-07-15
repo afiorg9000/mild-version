@@ -34,9 +34,9 @@ export const responses: Response[] = [
   },
   {
     name: "April",
-    impact: "Im so greeatful of your wondered kindness and connectness that you being not only in my love but to all the people you share your friendship with",
-    unforgettableMemory: "I've got one heartfelt one the first time you meat and held Harper, the love and fear of not holding her correctly and how you expressed that you had a overwhelming sense to protect her. You are still one of the kindest and most caring ive met.\n\nThe other is the invention of Butt Jousting, please have him explain haha",
-    whatToHear: "We are so lucky the we voice our support all the time but thank you for being a great friend and still being I my life.",
+    impact: "I'm so grateful of your wonderful kindness and connectedness that you bring not only in my love but to all the people you share your friendship with",
+    unforgettableMemory: "I've got one heartfelt one the first time you met and held Harper, the love and fear of not holding her correctly and how you expressed that you had an overwhelming sense to protect her. You are still one of the kindest and most caring I've met.\n\nThe other is the invention of Butt Jousting, please have him explain haha",
+    whatToHear: "We are so lucky that we voice our support all the time but thank you for being a great friend and still being in my life.",
     loveAdmire: "Empathy and vision",
     growthArea: "Please find your work and home balance",
     yearVision: "More rest and holiday so we get to see you",
@@ -44,9 +44,9 @@ export const responses: Response[] = [
   },
   {
     name: "Holmes",
-    impact: "Ryan, you are very consistently ready to: -, be friendly - talk about something interesting - respond to something I think is interesting - party and bring party energy - sing (e g. Holy Diver)\n\nI am also a big Sofia fan, and I really like how much you believe in her, encourage her, and hype her up",
+    impact: "Ryan, you are very consistently ready to: - be friendly - talk about something interesting - respond to something I think is interesting - party and bring party energy - sing (e.g. Holy Diver)\n\nI am also a big Sofia fan, and I really like how much you believe in her, encourage her, and hype her up",
     unforgettableMemory: "For me the Planet Sofia hosting was really remarkable. I also like Ryan's enthusiasm for stoner metal!",
-    whatToHear: "Aw, I'm not sure on this one. I think I'd normally say all the things. I really mean the stuff I said above about liking how consistently ready Ryan is. I like how well-rounded and well-grounded Ryan is too. That quality a little rare in our scene, or my scene, and it's nice. Also Ryan has really great masculine energy I mean come on!",
+    whatToHear: "Aw, I'm not sure on this one. I think I'd normally say all the things. I really mean the stuff I said above about liking how consistently ready Ryan is. I like how well-rounded and well-grounded Ryan is too. That quality is a little rare in our scene, or my scene, and it's nice. Also Ryan has really great masculine energy I mean come on!",
     loveAdmire: "People who aren't bogged down by all the American-ness of Americans (and some of the scars of growing up here) but have the earnestness, non-cynicism, excitement, alignment, optimism, and directness that it's hard to find in most of the world.",
     growthArea: "Hmm I'm always rooting for people to get grimier but not if it comes at the cost of any of the qualities above!! I dunno. More anal sex, or train hopping, or smaller metal shows and make friends, or freak out a little and do something a little crazy at work to try to speed things up or go big. Fire somebody you know you want to fire. I really don't know but get in there!",
     yearVision: "Something grimy",
@@ -54,22 +54,22 @@ export const responses: Response[] = [
   },
   {
     name: "Mat Allen",
-    impact: "Holy sHIT dude, you've completed changed the trajectory of my life at least twice. Not many people have done that. Being in the Bay has dramatically changed my life and twice when I was seriously considering moving back you kept me around. It's inspiring to see your zaney side while also upholding a strong professional career while also doing good; you take having fun seriously and are serious about making the world better, and that's really inspiring.\n\nI really appreciate you Ryan, you've consistently been a stellar person to know and am so grateful we're friends.",
-    unforgettableMemory: "oh my god, at vibe gala we were dancing and I was hit with this realization that \"there was literally nothing else I'd rather be doing right now.\" That was such a special moment to me.\n\nAnother, as soon as I found \"Cool Cat\" I had the thought \"damn, we should've been partying this whole time\"",
+    impact: "Holy sHIT dude, you've completely changed the trajectory of my life at least twice. Not many people have done that. Being in the Bay has dramatically changed my life and twice when I was seriously considering moving back you kept me around. It's inspiring to see your zany side while also upholding a strong professional career while also doing good; you take having fun seriously and are serious about making the world better, and that's really inspiring.\n\nI really appreciate you Ryan, you've consistently been a stellar person to know and am so grateful we're friends.",
+    unforgettableMemory: "Oh my god, at vibe gala we were dancing and I was hit with this realization that \"there was literally nothing else I'd rather be doing right now.\" That was such a special moment to me.\n\nAnother, as soon as I found \"Cool Cat\" I had the thought \"damn, we should've been partying this whole time\"",
     whatToHear: "You're a beautiful, beautiful human being Ryan. I love you dearly and genuinely wish more people were like you.",
     loveAdmire: "I love your weird so much. I love your depth, how we can party and have fun, but also get into the tougher conversations and sit with it. That's a type of maturity I want to be around. Dancing with you is literally one of my favorite things",
     growthArea: "I think you have strong opinions and I wonder if it'd be helpful to hear people's thoughts more before adding your own. There can be an inherent bias to trust people that speak with authority and that can dissuade people from sharing their own, or trusting it (I might be biased in the opposite direction though)",
-    yearVision: "I have no doubt he'll continue on the smashing success he's already been doing, and on the path towards. I expect that he'll face setbacks but nothing that will be too much.\n\nI hope you both are able to get your house setup and form a good group of people to be around. I'm very excited about this, and for what the rest of the year has in store for you :)",
+    yearVision: "I have no doubt he'll continue on the smashing success he's already been doing, and on the path towards. I expect that he'll face setbacks but nothing that will be too much.\n\nI hope you both are able to get your house set up and form a good group of people to be around. I'm very excited about this, and for what the rest of the year has in store for you :)",
     reflections: "This is such a cute idea!! Thanks for creating this and sending this to me. I'm not always great with words and I appreciate this opportunity to get to share with you <3\n\nLove you guys!"
   },
   {
     name: "Josh",
-    impact: "How does any best mate impact a life? To grow together while directing each others path (and music taste) in a million small ways. Constant and lasting, Ryan is apart of my life, not an impact on it.",
+    impact: "How does any best mate impact a life? To grow together while directing each other's path (and music taste) in a million small ways. Constant and lasting, Ryan is a part of my life, not an impact on it.",
     unforgettableMemory: "Driving along Tally, and out to Burleigh. The early days of crazy weird movie nights. Walking the streets of Byron Bay in the heat of summer.",
     whatToHear: "You are gentle and driven. A combination that is extremely rare and almost completely lost to ancient times.",
     loveAdmire: "Ryan uses his extreme intelligence to better the world and protect its future.",
     growthArea: "Find a nice place and sit. No music, drugs, problem solving, or worrying about work tomorrow. Be in your body, but out of your world. Just sit quietly.",
-    yearVision: "This year will have less problems to manage on behalf of others. A year of steady growth and calmly beeing on top of tasks. A year where your team will find its groove.",
+    yearVision: "This year will have less problems to manage on behalf of others. A year of steady growth and calmly being on top of tasks. A year where your team will find its groove.",
     reflections: "Rock on, motherfucker."
   },
   {
@@ -85,7 +85,7 @@ export const responses: Response[] = [
   {
     name: "Mel Kidd (Dad)",
     impact: "I could never have believed that my son Ryan would achieve all that he has over the last 30 years. I have enjoyed and have been proud, as a father, of Ryan's many achievements in all areas of his life. Excelling in all the years of his education, constantly winning awards and finally securing the job he worked so hard for. Ryan's All Saints yearbook read 'The person most likely to change the world'. Which he is doing now, well done, son.",
-    unforgettableMemory: "Regina and I wanted Ryan to be accepted by All Saints Anglican School, but was informed that is was not possible. Ryan sat for the scholarship exam, excelling in English but did not make the grade in maths due to his previous schooling. So, he missed out. We asked for a meeting with the Headmaster Patrick Wallas, and it was granted. During that meeting, Ryan showed Patrick the book he was writing and they found they had a kinship in the literary interests. At that point, Ryan had talked his way into the school. The Headmaster's class was English for only the best students and Ryan was included. An annual literary contest called the Pegasus award was awarded annually by Patrick. Ryan got the bronze the first year, silver the second, and gold the third year with his short story. His story went on win an award with James Cook University with a cash prize and future publishing rights.",
+    unforgettableMemory: "Regina and I wanted Ryan to be accepted by All Saints Anglican School, but were informed that it was not possible. Ryan sat for the scholarship exam, excelling in English but did not make the grade in maths due to his previous schooling. So, he missed out. We asked for a meeting with the Headmaster Patrick Wallas, and it was granted. During that meeting, Ryan showed Patrick the book he was writing and they found they had a kinship in the literary interests. At that point, Ryan had talked his way into the school. The Headmaster's class was English for only the best students and Ryan was included. An annual literary contest called the Pegasus award was awarded annually by Patrick. Ryan got the bronze the first year, silver the second, and gold the third year with his short story. His story went on to win an award with James Cook University with a cash prize and future publishing rights.",
     whatToHear: "Ryan, you have been a wonderful part of our family, doing everything that you set out to do in your life. I have enjoyed being there for your life experiences. You have made it, son, to be all you can be and there is more to come. Ryan, whatever you took on in life, being all the years of your education, becoming a Queen's Scout, constantly winning debating competitions, the gold Pegasus award and finally the Doctor of Philosophy degree in quantum physics. You did whatever was necessary and I am very proud of it all, thanks.",
     loveAdmire: "I think that Ryan is a very loving, enjoyable person who has studied intently to undertake the challenge to make the world a better place.",
     growthArea: "I hope you have learned that a balanced life with work, friends, exercise and sleep are all part of a good life and the best health.",
@@ -127,9 +127,9 @@ export const responses: Response[] = [
     impact: "Ryan's dedication to making the world a better place is so inspiring.",
     unforgettableMemory: "I cherish how Ryan always said, \"I'm not cake!\" whenever I'd give him a sniff during a hug.",
     whatToHear: "It has been a joy to watch you grow from infancy into the man that I am proud to know, not just as family, but as a friend. Love you immensely.",
-    loveAdmire: "I think there has always been a dedication to the greater good, to strive for betterrment., to know more about himself.",
+    loveAdmire: "I think there has always been a dedication to the greater good, to strive for betterment, to know more about himself.",
     growthArea: "I don't have a suggestion here. Ryan being Ryan is always exploring, questioning, and questing to know more about the world, and himself. Never stop.",
-    yearVision: "I hope Ryan continues to find satisfaction happiness, & joy in work, life, and love.",
+    yearVision: "I hope Ryan continues to find satisfaction, happiness, & joy in work, life, and love.",
     reflections: "So many snapshot memories. The first time I saw him attached to his mother's breast. The \"I'm not cake\" which became our special thing. Our shared joy of reading, and a shared view of the world. Caring for his friends, family & the world. Playing games together. Thank you Ryan for coming into our family. We are richer for it."
   }
 ];
