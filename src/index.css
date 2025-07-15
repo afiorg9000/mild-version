@@ -231,4 +231,71 @@ All colors MUST be HSL.
     bottom: -1rem;
     right: 0;
   }
+
+  /* Book page turn effect */
+  .animate-page-turn-forward {
+    animation: pageFlipForward 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-origin: right center;
+    transform-style: preserve-3d;
+  }
+  
+  .animate-page-turn-backward {
+    animation: pageFlipBackward 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-origin: left center;
+    transform-style: preserve-3d;
+  }
+  
+  @keyframes pageFlipForward {
+    0% {
+      transform: perspective(1200px) rotateY(0deg);
+      opacity: 1;
+    }
+    25% {
+      transform: perspective(1200px) rotateY(45deg) scale(0.95);
+      opacity: 0.8;
+      box-shadow: 20px 0 40px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+      transform: perspective(1200px) rotateY(90deg) scale(0.9);
+      opacity: 0.4;
+      box-shadow: 40px 0 60px rgba(0, 0, 0, 0.4);
+    }
+    75% {
+      transform: perspective(1200px) rotateY(135deg) scale(0.95);
+      opacity: 0.6;
+      box-shadow: 20px 0 40px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+      transform: perspective(1200px) rotateY(180deg);
+      opacity: 1;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  @keyframes pageFlipBackward {
+    0% {
+      transform: perspective(1200px) rotateY(180deg);
+      opacity: 1;
+    }
+    25% {
+      transform: perspective(1200px) rotateY(135deg) scale(0.95);
+      opacity: 0.8;
+      box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+      transform: perspective(1200px) rotateY(90deg) scale(0.9);
+      opacity: 0.4;
+      box-shadow: -40px 0 60px rgba(0, 0, 0, 0.4);
+    }
+    75% {
+      transform: perspective(1200px) rotateY(45deg) scale(0.95);
+      opacity: 0.6;
+      box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+      transform: perspective(1200px) rotateY(0deg);
+      opacity: 1;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+  }
 }

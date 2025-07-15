@@ -123,6 +123,8 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'page-turn': 'page-turn 0.8s ease-in-out',
+				'page-turn-forward': 'pageFlipForward 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+				'page-turn-backward': 'pageFlipBackward 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
 				'book-open': 'book-open 0.6s ease-out',
 				'float': 'float 3s ease-in-out infinite'
 			}
