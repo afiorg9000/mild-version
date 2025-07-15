@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback, memo } from "react";
 import { BookCover } from "./BookCover";
 import { BookPage } from "./BookPage";
 import { TableOfContents } from "./TableOfContents";
@@ -10,33 +10,36 @@ export const DigitalBook = () => {
   const [isReading, setIsReading] = useState(false);
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
 
-  const handleStartReading = () => {
-    console.log("Start reading button clicked!");
-    console.log("Current isReading state:", isReading);
+  const handleStartReading = useCallback(() => {
     setIsReading(true);
     setCurrentPageIndex(0);
-    console.log("State should now be updated to isReading: true");
-  };
+  }, []);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     if (currentPageIndex < chapters.length - 1) {
       setCurrentPageIndex(prev => prev + 1);
     }
-  };
+  }, [currentPageIndex]);
 
-  const handlePrevious = () => {
+  const handlePrevious = useCallback(() => {
     if (currentPageIndex > 0) {
       setCurrentPageIndex(prev => prev - 1);
     } else if (currentPageIndex === 0 && isReading) {
       setIsReading(false);
     }
-  };
+  }, [currentPageIndex, isReading]);
 
-  const handleGoToPage = (pageIndex: number) => {
-    setCurrentPageIndex(pageIndex);
-  };
+  const handleGoToPage = useCallback((pageIndex: number) => {
+    if (pageIndex === -1) {
+      // Go to cover page
+      setIsReading(false);
+    } else {
+      // Go to a chapter page
+      setIsReading(true);
+      setCurrentPageIndex(pageIndex);
+    }
+  }, []);
 
-  // Keyboard navigation
   useKeyboard({
     ArrowLeft: handlePrevious,
     ArrowRight: handleNext,
@@ -46,7 +49,15 @@ export const DigitalBook = () => {
   });
 
   if (!isReading) {
-    return <BookCover onStartReading={handleStartReading} />;
+    return (
+      <div className="w-full h-screen overflow-hidden bg-background">
+        <TableOfContents 
+          currentPageIndex={-1}
+          onGoToPage={handleGoToPage}
+        />
+        <BookCover onStartReading={handleStartReading} />
+      </div>
+    );
   }
 
   const currentChapter = chapters[currentPageIndex];

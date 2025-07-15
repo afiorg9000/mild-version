@@ -20,19 +20,19 @@ All colors MUST be HSL.
     --popover-foreground: 25 15% 15%;
 
     /* Rich book spine colors */
-    --primary: 25 40% 25%;
+    --primary: 0 60% 25%;
     --primary-foreground: 45 25% 95%;
 
     /* Soft paper tones */
     --secondary: 40 15% 92%;
-    --secondary-foreground: 25 25% 20%;
+    --secondary-foreground: 0 25% 20%;
 
     /* Muted text like old ink */
     --muted: 40 12% 88%;
-    --muted-foreground: 25 15% 45%;
+    --muted-foreground: 0 15% 45%;
 
     /* Accent like bookmark ribbon */
-    --accent: 15 70% 50%;
+    --accent: 0 70% 50%;
     --accent-foreground: 45 25% 95%;
 
     --destructive: 0 84.2% 60.2%;
@@ -41,7 +41,7 @@ All colors MUST be HSL.
     /* Subtle page borders */
     --border: 40 15% 85%;
     --input: 40 15% 90%;
-    --ring: 25 40% 25%;
+    --ring: 0 60% 25%;
 
     /* Book-like rounded corners */
     --radius: 0.75rem;
@@ -59,8 +59,8 @@ All colors MUST be HSL.
       hsl(45 20% 97%) 100%);
     
     /* Book shadows */
-    --book-shadow: 0 8px 30px -5px hsl(25 40% 25% / 0.3);
-    --page-shadow: 0 2px 8px -2px hsl(25 40% 25% / 0.1);
+    --book-shadow: 0 8px 30px -5px hsl(0 60% 25% / 0.3);
+    --page-shadow: 0 2px 8px -2px hsl(0 60% 25% / 0.1);
     
     /* Page animations */
     --page-turn-duration: 0.8s;
@@ -131,19 +131,30 @@ All colors MUST be HSL.
     @apply bg-background text-foreground font-serif overflow-hidden;
     font-family: var(--font-body);
     background: var(--paper-texture);
+    /* Performance optimizations */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
   }
+
+  /* Optimize animations */
+  * {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
 }
 
 @layer components {
-  /* Book page animation classes */
+  /* Book page animation classes - optimized for performance */
   .page-turn-enter {
     transform: rotateY(-90deg);
     transform-origin: left center;
     opacity: 0;
+    will-change: transform, opacity;
   }
   
   .page-turn-enter-active {
@@ -151,11 +162,13 @@ All colors MUST be HSL.
     opacity: 1;
     transition: transform var(--page-turn-duration) ease-in-out,
                 opacity calc(var(--page-turn-duration) / 2) ease-in;
+    will-change: transform, opacity;
   }
   
   .page-turn-exit {
     transform: rotateY(0deg);
     opacity: 1;
+    will-change: transform, opacity;
   }
   
   .page-turn-exit-active {
@@ -163,6 +176,7 @@ All colors MUST be HSL.
     opacity: 0;
     transition: transform var(--page-turn-duration) ease-in-out,
                 opacity calc(var(--page-turn-duration) / 2) ease-out;
+    will-change: transform, opacity;
   }
 
   /* Book binding effect */
@@ -176,10 +190,14 @@ All colors MUST be HSL.
     box-shadow: inset 0 0 10px hsl(var(--primary) / 0.3);
   }
 
-  /* Paper texture overlay */
+  /* Paper texture overlay - optimized for performance */
   .paper-texture {
     background: var(--paper-texture);
     position: relative;
+    will-change: auto;
+    /* Ensure both pages load simultaneously */
+    content-visibility: auto;
+    contain-intrinsic-size: 100vh 50vw;
   }
   
   .paper-texture::before {
@@ -194,6 +212,25 @@ All colors MUST be HSL.
       radial-gradient(circle at 75% 75%, hsl(var(--foreground) / 0.02) 1px, transparent 1px);
     background-size: 24px 24px, 36px 36px;
     pointer-events: none;
+    will-change: auto;
+  }
+
+  /* Book page layout optimization */
+  .book-page-layout {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* Ensure both pages render simultaneously */
+    contain: layout style paint;
+  }
+
+  .book-page-left,
+  .book-page-right {
+    width: 50%;
+    height: 100%;
+    /* Optimize rendering */
+    contain: layout style paint;
+    content-visibility: auto;
   }
 
   /* Chapter number styling */

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo, useCallback, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -12,33 +12,45 @@ interface SearchNamesProps {
 
 export const SearchNames = ({ onGoToPage }: SearchNamesProps) => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
   const [isOpen, setIsOpen] = useState(false);
 
-  // Get all names from responses and their corresponding chapters
-  const searchResults = responses
-    .filter(response => 
-      response.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
-      searchTerm.trim() !== ""
-    )
-    .map(response => {
-      // Find which chapters contain this person's response
-      const containingChapters = chapters
-        .map((chapter, index) => ({ chapter, index }))
-        .filter(({ chapter }) => 
-          chapter.content?.some(content => content.name === response.name)
-        );
-      
-      return {
-        name: response.name,
-        chapters: containingChapters
-      };
-    });
+  // Debounce search input to prevent excessive re-renders
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedSearchTerm(searchTerm);
+    }, 150);
 
-  const handleGoToPage = (pageIndex: number) => {
+    return () => clearTimeout(timer);
+  }, [searchTerm]);
+
+  // Memoize the search results to prevent recalculation on every render
+  const searchResults = useMemo(() => {
+    if (!debouncedSearchTerm.trim()) return [];
+    
+    return responses
+      .filter(response => 
+        response.name.toLowerCase().includes(debouncedSearchTerm.toLowerCase())
+      )
+      .map(response => {
+        const containingChapters = chapters
+          .map((chapter, index) => ({ chapter, index }))
+          .filter(({ chapter }) => 
+            chapter.content?.some(content => content.name === response.name)
+          );
+        
+        return {
+          name: response.name,
+          chapters: containingChapters
+        };
+      });
+  }, [debouncedSearchTerm]);
+
+  const handleGoToPage = useCallback((pageIndex: number) => {
     onGoToPage(pageIndex);
     setIsOpen(false);
     setSearchTerm("");
-  };
+  }, [onGoToPage]);
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
