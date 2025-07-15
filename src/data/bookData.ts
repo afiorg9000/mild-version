@@ -34,13 +34,13 @@ export const responses: Response[] = [
   },
   {
     name: "April",
-    impact: "Im so greeatful of your wondered kindness and connectness that you being not only in my love but to all the people you share your friendship with",
-    unforgettableMemory: "I've got one heartfelt one the first time you meat and held Harper, the love and fear of not holding her correctly and how you expressed that you had a overwhelming sense to protect her. You are still one of the kindest and most caring ive met.\n\nThe other is the invention of Butt Jousting, please have him explain haha",
-    whatToHear: "We are so lucky the we voice our support all the time but thank you for being a great friend and still being I my life.",
+    impact: "I'm so grateful for your wonderful kindness and connectedness that you bring not only to my life but to all the people you share your friendship with.",
+    unforgettableMemory: "I've got one heartfelt memory: the first time you met and held Harper, the love and fear of not holding her correctly and how you expressed that you had an overwhelming sense to protect her. You are still one of the kindest and most caring people I've met.\n\nThe other is the invention of Butt Jousting, please have him explain haha",
+    whatToHear: "We are so lucky that we voice our support all the time but thank you for being a great friend and still being in my life.",
     loveAdmire: "Empathy and vision",
     growthArea: "Please find your work and home balance",
-    yearVision: "More rest and holiday so we get to see you",
-    reflections: "We love you soooooo love"
+    yearVision: "More rest and holidays so we get to see you",
+    reflections: "We love you soooooo much"
   },
   {
     name: "Holmes",
@@ -54,7 +54,7 @@ export const responses: Response[] = [
   },
   {
     name: "Mat Allen",
-    impact: "Holy sHIT dude, you've completed changed the trajectory of my life at least twice. Not many people have done that. Being in the Bay has dramatically changed my life and twice when I was seriously considering moving back you kept me around. It's inspiring to see your zaney side while also upholding a strong professional career while also doing good; you take having fun seriously and are serious about making the world better, and that's really inspiring.\n\nI really appreciate you Ryan, you've consistently been a stellar person to know and am so grateful we're friends.",
+    impact: "Holy shit dude, you've completely changed the trajectory of my life at least twice. Not many people have done that. Being in the Bay has dramatically changed my life and twice when I was seriously considering moving back you kept me around. It's inspiring to see your zany side while also upholding a strong professional career while also doing good; you take having fun seriously and are serious about making the world better, and that's really inspiring.\n\nI really appreciate you Ryan, you've consistently been a stellar person to know and am so grateful we're friends.",
     unforgettableMemory: "oh my god, at vibe gala we were dancing and I was hit with this realization that \"there was literally nothing else I'd rather be doing right now.\" That was such a special moment to me.\n\nAnother, as soon as I found \"Cool Cat\" I had the thought \"damn, we should've been partying this whole time\"",
     whatToHear: "You're a beautiful, beautiful human being Ryan. I love you dearly and genuinely wish more people were like you.",
     loveAdmire: "I love your weird so much. I love your depth, how we can party and have fun, but also get into the tougher conversations and sit with it. That's a type of maturity I want to be around. Dancing with you is literally one of my favorite things",
@@ -107,7 +107,7 @@ export const responses: Response[] = [
     impact: "Your parties have been some of the best experiences of my life. Before them I merely felt grateful for the miracle of overcoming my autism enough to have friends outside my family. But your parties taught me that I could not only be not awkward all the time, but charismatic. Something about the creativity everywhere at them and the fun and your supportive presence has really made me come alive. It's been so much fun exploring this new playful side of myself. It's something I've been able to bring with me to other parts of my life, and I love it so much.",
     unforgettableMemory: "When you supported me as I was going through that terrifying experience with Thor. Low self esteem is my biggest weakness, and I was so critical of myself during it in ways I eventually overcame. It meant so much to me that someone I respect as much as you was less judgmental than I was worried about, even though Thor is a great guy when he's not triggered.",
     whatToHear: "Your work is so amazing. Thank you so much for doing so much to protect the world from perhaps the greatest challenge humanity has faced. It really inspires me to contribute more with my own career.",
-    loveAdmire: "Despite how busy you blare with such important work, you're very caring. For example, it comes through in the way you've mentored me in kink, in the way you check in when I've deleted a message, the way you care about how I'm treated as a Christian in the community, the way you were so caring towards Ella during your breakup, and the way you made me sing at your dollarvision party despite me desperately wanting to chicken out.",
+    loveAdmire: "Despite how busy you are with such important work, you're very caring. For example, it comes through in the way you've mentored me in kink, in the way you check in when I've deleted a message, the way you care about how I'm treated as a Christian in the community, the way you were so caring towards Ella during your breakup, and the way you made me sing at your dollarvision party despite me desperately wanting to chicken out.",
     growthArea: "My weakly held view is that you could live more frugally so you could donate more to charity. It's cheaper to live a little south in Oakland and take a Lyft when it's dark than to pay so much for central Berkeley housing.",
     yearVision: "I'm so excited for you and Sofia's group house! The combination of groundbreaking work and beautiful creativity and deep personal growth that you and Sofia share is so wonderful. I'm so glad you've found someone just as unique and impressive as you to share your life with.",
     reflections: "Your lightning talks at the MATS parties are so awesome. It was my very first lightning talk, because you fostered such an exciting and supportive environment. I've since given so many amazing lightning talks, and it would have taken so much longer to get started without your vision."

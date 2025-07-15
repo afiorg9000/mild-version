@@ -106,12 +106,6 @@ export const BookPage = ({ chapter, pageIndex, totalPages, onPrevious, onNext }:
         <div className="max-w-md mx-auto text-center">
           <div className="chapter-number text-6xl mb-8 font-light">{chapter.title}</div>
           <h2 className="font-serif text-4xl text-foreground mb-12 leading-tight">{chapter.subtitle}</h2>
-          
-          {chapter.content && chapter.content.length > 0 && (
-            <div className="text-muted-foreground font-serif text-lg">
-              {chapter.content.length} {chapter.content.length === 1 ? 'reflection' : 'reflections'}
-            </div>
-          )}
         </div>
       </div>
 
