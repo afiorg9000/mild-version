@@ -17,6 +17,8 @@ interface BookPageProps {
 
 const getContentForChapter = (chapter: any, response: Response) => {
   switch (chapter.id) {
+    case 'preface':
+      return response.impact;
     case 'impact':
       return response.impact;
     case 'memories':
