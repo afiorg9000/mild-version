@@ -9,8 +9,11 @@ export const DigitalBook = () => {
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
 
   const handleStartReading = () => {
+    console.log("Start reading button clicked!");
+    console.log("Current isReading state:", isReading);
     setIsReading(true);
     setCurrentPageIndex(0);
+    console.log("State should now be updated to isReading: true");
   };
 
   const handleNext = () => {

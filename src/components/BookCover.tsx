@@ -46,7 +46,10 @@ export const BookCover = ({ onStartReading }: BookCoverProps) => {
           
           {/* Start Reading Button */}
           <Button
-            onClick={onStartReading}
+            onClick={() => {
+              console.log("Button clicked in BookCover");
+              onStartReading();
+            }}
             size="lg"
             variant="book"
             className="group/btn relative overflow-hidden px-8 py-4 text-lg font-serif animate-float"
