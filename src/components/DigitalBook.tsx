@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { BookCover } from "./BookCover";
 import { BookPage } from "./BookPage";
+import { TableOfContents } from "./TableOfContents";
+import { SearchNames } from "./SearchNames";
 import { chapters } from "@/data/bookData";
 import { useKeyboard } from "@/hooks/useKeyboard";
 
@@ -30,6 +32,10 @@ export const DigitalBook = () => {
     }
   };
 
+  const handleGoToPage = (pageIndex: number) => {
+    setCurrentPageIndex(pageIndex);
+  };
+
   // Keyboard navigation
   useKeyboard({
     ArrowLeft: handlePrevious,
@@ -47,6 +53,12 @@ export const DigitalBook = () => {
 
   return (
     <div className="w-full h-screen overflow-hidden bg-background">
+      <TableOfContents 
+        currentPageIndex={currentPageIndex}
+        onGoToPage={handleGoToPage}
+      />
+      <SearchNames onGoToPage={handleGoToPage} />
+      
       <div 
         key={currentPageIndex}
         className="animate-page-turn"

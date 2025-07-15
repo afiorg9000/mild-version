@@ -34,13 +34,13 @@ export const responses: Response[] = [
   },
   {
     name: "April",
-    impact: "I'm so grateful of your wonderful kindness and connectedness that you bring not only in my love but to all the people you share your friendship with",
-    unforgettableMemory: "I've got one heartfelt one the first time you met and held Harper, the love and fear of not holding her correctly and how you expressed that you had an overwhelming sense to protect her. You are still one of the kindest and most caring I've met.\n\nThe other is the invention of Butt Jousting, please have him explain haha",
-    whatToHear: "We are so lucky that we voice our support all the time but thank you for being a great friend and still being in my life.",
+    impact: "Im so greeatful of your wondered kindness and connectness that you being not only in my love but to all the people you share your friendship with",
+    unforgettableMemory: "I've got one heartfelt one the first time you meat and held Harper, the love and fear of not holding her correctly and how you expressed that you had a overwhelming sense to protect her. You are still one of the kindest and most caring ive met.\n\nThe other is the invention of Butt Jousting, please have him explain haha",
+    whatToHear: "We are so lucky the we voice our support all the time but thank you for being a great friend and still being I my life.",
     loveAdmire: "Empathy and vision",
     growthArea: "Please find your work and home balance",
-    yearVision: "More rest and holiday so we get to see you",
-    reflections: "We love you soooooo love"
+    yearVision: "More rest and holidays so we get to see you",
+    reflections: "We love you soooooo much"
   },
   {
     name: "Holmes",
@@ -54,8 +54,8 @@ export const responses: Response[] = [
   },
   {
     name: "Mat Allen",
-    impact: "Holy sHIT dude, you've completely changed the trajectory of my life at least twice. Not many people have done that. Being in the Bay has dramatically changed my life and twice when I was seriously considering moving back you kept me around. It's inspiring to see your zany side while also upholding a strong professional career while also doing good; you take having fun seriously and are serious about making the world better, and that's really inspiring.\n\nI really appreciate you Ryan, you've consistently been a stellar person to know and am so grateful we're friends.",
-    unforgettableMemory: "Oh my god, at vibe gala we were dancing and I was hit with this realization that \"there was literally nothing else I'd rather be doing right now.\" That was such a special moment to me.\n\nAnother, as soon as I found \"Cool Cat\" I had the thought \"damn, we should've been partying this whole time\"",
+    impact: "Holy sHIT dude, you've completed changed the trajectory of my life at least twice. Not many people have done that. Being in the Bay has dramatically changed my life and twice when I was seriously considering moving back you kept me around. It's inspiring to see your zaney side while also upholding a strong professional career while also doing good; you take having fun seriously and are serious about making the world better, and that's really inspiring.\n\nI really appreciate you Ryan, you've consistently been a stellar person to know and am so grateful we're friends.",
+    unforgettableMemory: "oh my god, at vibe gala we were dancing and I was hit with this realization that \"there was literally nothing else I'd rather be doing right now.\" That was such a special moment to me.\n\nAnother, as soon as I found \"Cool Cat\" I had the thought \"damn, we should've been partying this whole time\"",
     whatToHear: "You're a beautiful, beautiful human being Ryan. I love you dearly and genuinely wish more people were like you.",
     loveAdmire: "I love your weird so much. I love your depth, how we can party and have fun, but also get into the tougher conversations and sit with it. That's a type of maturity I want to be around. Dancing with you is literally one of my favorite things",
     growthArea: "I think you have strong opinions and I wonder if it'd be helpful to hear people's thoughts more before adding your own. There can be an inherent bias to trust people that speak with authority and that can dissuade people from sharing their own, or trusting it (I might be biased in the opposite direction though)",
@@ -107,7 +107,7 @@ export const responses: Response[] = [
     impact: "Your parties have been some of the best experiences of my life. Before them I merely felt grateful for the miracle of overcoming my autism enough to have friends outside my family. But your parties taught me that I could not only be not awkward all the time, but charismatic. Something about the creativity everywhere at them and the fun and your supportive presence has really made me come alive. It's been so much fun exploring this new playful side of myself. It's something I've been able to bring with me to other parts of my life, and I love it so much.",
     unforgettableMemory: "When you supported me as I was going through that terrifying experience with Thor. Low self esteem is my biggest weakness, and I was so critical of myself during it in ways I eventually overcame. It meant so much to me that someone I respect as much as you was less judgmental than I was worried about, even though Thor is a great guy when he's not triggered.",
     whatToHear: "Your work is so amazing. Thank you so much for doing so much to protect the world from perhaps the greatest challenge humanity has faced. It really inspires me to contribute more with my own career.",
-    loveAdmire: "Despite how busy you blare with such important work, you're very caring. For example, it comes through in the way you've mentored me in kink, in the way you check in when I've deleted a message, the way you care about how I'm treated as a Christian in the community, the way you were so caring towards Ella during your breakup, and the way you made me sing at your dollarvision party despite me desperately wanting to chicken out.",
+    loveAdmire: "Despite how busy you are with such important work, you're very caring. For example, it comes through in the way you've mentored me in kink, in the way you check in when I've deleted a message, the way you care about how I'm treated as a Christian in the community, the way you were so caring towards Ella during your breakup, and the way you made me sing at your dollarvision party despite me desperately wanting to chicken out.",
     growthArea: "My weakly held view is that you could live more frugally so you could donate more to charity. It's cheaper to live a little south in Oakland and take a Lyft when it's dark than to pay so much for central Berkeley housing.",
     yearVision: "I'm so excited for you and Sofia's group house! The combination of groundbreaking work and beautiful creativity and deep personal growth that you and Sofia share is so wonderful. I'm so glad you've found someone just as unique and impressive as you to share your life with.",
     reflections: "Your lightning talks at the MATS parties are so awesome. It was my very first lightning talk, because you fostered such an exciting and supportive environment. I've since given so many amazing lightning talks, and it would have taken so much longer to get started without your vision."
@@ -136,10 +136,19 @@ export const responses: Response[] = [
 
 export const chapters = [
   {
-    id: 'cover',
-    title: 'Cover',
-    subtitle: 'The Beginning',
-    content: null
+    id: 'preface',
+    title: 'Preface',
+    subtitle: 'A Message for You',
+    content: [{
+      name: "Sofia",
+      impact: "Ryan,\n\nWhat you're about to read is a collection of thoughts that represent just a fraction of the lives you've impacted and connected with. Each page holds the genuine affection and admiration of someone whose world is brighter because in many ways youve been a strong ground for people to lean on, a dyngus to laugh with and a catalyst for growth and joy in so many lives. i made this for you to can look back on it in the future and laugh or cry at the absurdity and sweetness of the responses. to find friends on here you're still friends with and others that have dispersed. i want to give you everything, part of that is a sense of love and belonging, so here is a little dopamine boost, to help.\n\nwith all my love and will to make ryan feel like the most special boy in the world,\n\nsofia",
+      unforgettableMemory: "",
+      whatToHear: "",
+      loveAdmire: "",
+      growthArea: "",
+      yearVision: "",
+      reflections: ""
+    }]
   },
   {
     id: 'impact',
@@ -187,6 +196,15 @@ export const chapters = [
     id: 'final',
     title: 'Final Message',
     subtitle: 'From Sofia',
-    content: null
+    content: [{
+      name: "Sofia",
+      impact: "You've just read through how others see you, how you live in their lives. now i want to tell you how you live in mine.\n\n**My clumsy, sweet &  beautiful Ryan**\n\nIt blows me away how you carry the weight of everything you're working on and not lose sight of your own well-being, or of this love, this moment we're in that's so worth protecting. When I drop into just how precarious this world is, how close we stand to the edge of everything we know, how the future hangs by threads too fine for most to see, my chest gets overwhelmingly heavy, it takes my tears and my breath away, being with the vastness of possibility stretching before us, how the the future projects to unfold in countless branching paths, some bright, some dark. I don't know what comes next. And yet… here I am, here we are, alive in this moment, moving through it together. Whatever the future holds, whether it's decades of gradual progress or humanity has only a few chapters left to write, I'm grateful we get to experience history together in this chapter of our lives. Being a home for each other through all the tension and stress, sharing tears, healing, laughter, and appreciation for it all. It just feels so right somehow.\n\nYou remind me why living matters. Why my own health, my rest, and a love like ours are worth fighting for. You meet parts of me that no one else ever has, with such real love, care, and acceptance. And even if the little light we've been working so hard to keep alive someday flickers out, I'll still be glad we were here. That we chose to keep fighting, working on ourselves, on each other, on our friends, our work, our words, loving passionately and intensely, striving to overcome our own limitations. The fact that you exist means I had never really been alone in this, I just didn't know it yet. Your empathy, your compassion, your will to power, your commitment, your strength, your drive to push through to the other side, all of these will always stand as an exemplar of the kind of human others should strive to be. Everything in me wants to keep growing, creating, and striving alongside you for a future worth creating. Whatever comes, I'm so grateful we have what we have now.\n\n💙",
+      unforgettableMemory: "",
+      whatToHear: "",
+      loveAdmire: "",
+      growthArea: "",
+      yearVision: "",
+      reflections: ""
+    }]
   }
 ];
