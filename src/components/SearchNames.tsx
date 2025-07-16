@@ -58,7 +58,7 @@ export const SearchNames = ({ onGoToPage }: SearchNamesProps) => {
         <Button
           variant="ghost"
           size="icon"
-          className="absolute top-8 right-8 hover:bg-primary/10 z-10"
+          className="absolute top-8 md:top-8 top-4 right-8 md:right-8 right-4 hover:bg-primary/10 z-10"
         >
           <Search className="w-6 h-6" />
         </Button>

@@ -16,7 +16,7 @@ export const TableOfContents = ({ currentPageIndex, onGoToPage }: TableOfContent
         <Button
           variant="ghost"
           size="icon"
-          className="absolute top-8 left-8 hover:bg-primary/10 z-10"
+          className="absolute top-8 md:top-8 top-4 left-8 md:left-8 left-4 hover:bg-primary/10 z-10"
         >
           <BookOpen className="w-6 h-6" />
         </Button>

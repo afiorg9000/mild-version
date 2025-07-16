@@ -50,7 +50,7 @@ export const DigitalBook = () => {
 
   if (!isReading) {
     return (
-      <div className="w-full h-screen overflow-hidden bg-background">
+      <div className="w-full h-screen bg-background">
         <TableOfContents 
           currentPageIndex={-1}
           onGoToPage={handleGoToPage}
@@ -63,7 +63,7 @@ export const DigitalBook = () => {
   const currentChapter = chapters[currentPageIndex];
 
   return (
-    <div className="w-full h-screen overflow-hidden bg-background">
+    <div className="w-full h-screen bg-background">
       <TableOfContents 
         currentPageIndex={currentPageIndex}
         onGoToPage={handleGoToPage}

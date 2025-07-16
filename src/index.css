@@ -128,13 +128,22 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-serif overflow-hidden;
+    @apply bg-background text-foreground font-serif;
     font-family: var(--font-body);
     background: var(--paper-texture);
     /* Performance optimizations */
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Desktop: prevent scrolling, Mobile: allow scrolling */
+    overflow-x: hidden;
+  }
+
+  /* Desktop: prevent body scrolling */
+  @media (min-width: 769px) {
+    body {
+      overflow: hidden;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -222,6 +231,22 @@ All colors MUST be HSL.
     height: 100vh;
     /* Ensure both pages render simultaneously */
     contain: layout style paint;
+    /* Desktop: prevent overflow, Mobile: allow scrolling */
+    overflow-x: hidden;
+  }
+
+  /* Desktop: prevent main container scrolling but allow page scrolling */
+  @media (min-width: 769px) {
+    .book-page-layout {
+      overflow: hidden;
+    }
+    
+    .book-page-left,
+    .book-page-right {
+      overflow-y: auto;
+      /* Smooth scrolling on desktop */
+      scroll-behavior: smooth;
+    }
   }
 
   .book-page-left,
@@ -231,6 +256,51 @@ All colors MUST be HSL.
     /* Optimize rendering */
     contain: layout style paint;
     content-visibility: auto;
+    /* Desktop: allow scrolling within pages */
+    overflow-y: auto;
+  }
+
+  /* Mobile responsive layout */
+  @media (max-width: 768px) {
+    .book-page-layout {
+      flex-direction: column;
+      height: auto !important;
+      min-height: 100vh;
+      /* Single scrolling container on mobile */
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .book-page-left,
+    .book-page-right {
+      width: 100%;
+      height: auto;
+      min-height: 100vh;
+      /* No individual scrolling on mobile - override desktop */
+      overflow: visible !important;
+    }
+
+    .book-page-left {
+      border-right: none;
+      border-bottom: 1px solid hsl(var(--border) / 0.3);
+    }
+
+    /* Mobile navigation positioning - fixed to viewport center */
+    .mobile-nav-left,
+    .mobile-nav-right {
+      position: fixed !important;
+      top: 50vh !important;
+      transform: translateY(-50%) !important;
+      z-index: 50;
+    }
+
+    .mobile-nav-left {
+      left: 1rem !important;
+    }
+
+    .mobile-nav-right {
+      right: 1rem !important;
+    }
   }
 
   /* Chapter number styling */
@@ -239,6 +309,15 @@ All colors MUST be HSL.
     font-weight: 600;
     color: hsl(var(--accent));
     text-shadow: 0 1px 2px hsl(var(--primary) / 0.1);
+  }
+
+  /* Text animation optimizations */
+  .animate-text-fade-in,
+  .animate-title-fade-in,
+  .animate-content-stagger {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
 
   /* Elegant quote styling */
