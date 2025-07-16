@@ -20,19 +20,19 @@ All colors MUST be HSL.
     --popover-foreground: 25 15% 15%;
 
     /* Rich book spine colors */
-    --primary: 0 60% 25%;
+    --primary: 25 40% 25%;
     --primary-foreground: 45 25% 95%;
 
     /* Soft paper tones */
     --secondary: 40 15% 92%;
-    --secondary-foreground: 0 25% 20%;
+    --secondary-foreground: 25 25% 20%;
 
     /* Muted text like old ink */
     --muted: 40 12% 88%;
-    --muted-foreground: 0 15% 45%;
+    --muted-foreground: 25 15% 45%;
 
     /* Accent like bookmark ribbon */
-    --accent: 0 70% 50%;
+    --accent: 15 70% 50%;
     --accent-foreground: 45 25% 95%;
 
     --destructive: 0 84.2% 60.2%;
@@ -41,7 +41,7 @@ All colors MUST be HSL.
     /* Subtle page borders */
     --border: 40 15% 85%;
     --input: 40 15% 90%;
-    --ring: 0 60% 25%;
+    --ring: 25 40% 25%;
 
     /* Book-like rounded corners */
     --radius: 0.75rem;
