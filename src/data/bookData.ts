@@ -48,8 +48,8 @@ export const responses: Response[] = [
     unforgettableMemory: "For me the Planet Sofia hosting was really remarkable. I also like Ryan's enthusiasm for stoner metal!",
     whatToHear: "Aw, I'm not sure on this one. I think I'd normally say all the things. I really mean the stuff I said above about liking how consistently ready Ryan is. I like how well-rounded and well-grounded Ryan is too. That quality is a little rare in our scene, or my scene, and it's nice. Also Ryan has really great masculine energy I mean come on!",
     loveAdmire: "People who aren't bogged down by all the American-ness of Americans (and some of the scars of growing up here) but have the earnestness, non-cynicism, excitement, alignment, optimism, and directness that it's hard to find in most of the world.",
-    growthArea: "Hmm I'm always rooting for people to get grimier but not if it comes at the cost of any of the qualities above!! I dunno. More anal sex, or train hopping, or smaller metal shows and make friends, or freak out a little and do something a little crazy at work to try to speed things up or go big. Fire somebody you know you want to fire. I really don't know but get in there!",
-    yearVision: "Something grimy",
+    growthArea: "",
+    yearVision: "",
     reflections: "I really like how you, Sofia and Ryan, do things like this for each other! I like how you put people on the spot and feel good doing that 💜❤️"
   },
   {
@@ -68,7 +68,7 @@ export const responses: Response[] = [
     unforgettableMemory: "Driving along Tally, and out to Burleigh. The early days of crazy weird movie nights. Walking the streets of Byron Bay in the heat of summer.",
     whatToHear: "You are gentle and driven. A combination that is extremely rare and almost completely lost to ancient times.",
     loveAdmire: "Ryan uses his extreme intelligence to better the world and protect its future.",
-    growthArea: "Find a nice place and sit. No music, drugs, problem solving, or worrying about work tomorrow. Be in your body, but out of your world. Just sit quietly.",
+    growthArea: "Find a nice place and sit. No music, problem solving, or worrying about work tomorrow. Be in your body, but out of your world. Just sit quietly.",
     yearVision: "This year will have less problems to manage on behalf of others. A year of steady growth and calmly being on top of tasks. A year where your team will find its groove.",
     reflections: "Rock on, motherfucker."
   },
@@ -107,7 +107,7 @@ export const responses: Response[] = [
     impact: "Your parties have been some of the best experiences of my life. Before them I merely felt grateful for the miracle of overcoming my autism enough to have friends outside my family. But your parties taught me that I could not only be not awkward all the time, but charismatic. Something about the creativity everywhere at them and the fun and your supportive presence has really made me come alive. It's been so much fun exploring this new playful side of myself. It's something I've been able to bring with me to other parts of my life, and I love it so much.",
     unforgettableMemory: "When you supported me as I was going through that terrifying experience with Thor. Low self esteem is my biggest weakness, and I was so critical of myself during it in ways I eventually overcame. It meant so much to me that someone I respect as much as you was less judgmental than I was worried about, even though Thor is a great guy when he's not triggered.",
     whatToHear: "Your work is so amazing. Thank you so much for doing so much to protect the world from perhaps the greatest challenge humanity has faced. It really inspires me to contribute more with my own career.",
-    loveAdmire: "Despite how busy you are with such important work, you're very caring. For example, it comes through in the way you've mentored me in kink, in the way you check in when I've deleted a message, the way you care about how I'm treated as a Christian in the community, the way you were so caring towards Ella during your breakup, and the way you made me sing at your dollarvision party despite me desperately wanting to chicken out.",
+    loveAdmire: "Despite how busy you are with such important work, you're very caring. This is evident in the way you check in when I've deleted a message, the way you care about how I'm treated as a Christian in the community, the way you were so caring towards Ella during your breakup, and the way you made me sing at your dollarvision party despite me desperately wanting to chicken out.",
     growthArea: "My weakly held view is that you could live more frugally so you could donate more to charity. It's cheaper to live a little south in Oakland and take a Lyft when it's dark than to pay so much for central Berkeley housing.",
     yearVision: "I'm so excited for you and Sofia's group house! The combination of groundbreaking work and beautiful creativity and deep personal growth that you and Sofia share is so wonderful. I'm so glad you've found someone just as unique and impressive as you to share your life with.",
     reflections: "Your lightning talks at the MATS parties are so awesome. It was my very first lightning talk, because you fostered such an exciting and supportive environment. I've since given so many amazing lightning talks, and it would have taken so much longer to get started without your vision."
@@ -256,7 +256,7 @@ export const responses: Response[] = [
   {
     name: "Paola",
     impact: "Ryan has been incredibly inspirational to me. Aside from doing an excellent job running (probably) one of the most important/impactful organizations to exist in our lifetimes, which in itself is massively inspirational, he is a really great human being. He is incredibly tenacious, principled, intelligent, funny, and kind. Ryan has been an exceptional friend to me and to all of the people around him, he seems to deeply care about his community to a degree that is incredibly rare.",
-    unforgettableMemory: "I remember first meeting him while on acid and Alex and Ece's house before going to vibegala. He was quite welcoming and I pretty much immediately felt comfortable in his presence. We were in line for the entrance together, I put glitter on his face, and then we parted ways and I didn't see him again at the party and we didn't meet again for months. However, I really liked him and had a feeling that our paths would cross again.",
+    unforgettableMemory: "I remember first meeting him at Alex and Ece's house before going to vibegala. He was quite welcoming and I pretty much immediately felt comfortable in his presence. We were in line for the entrance together, I put glitter on his face, and then we parted ways and I didn't see him again at the party and we didn't meet again for months. However, I really liked him and had a feeling that our paths would cross again.",
     whatToHear: "Out of friends that I have made in the Bay, you and Sofia are some of the only that I can easily see myself (and Rob) continuing to have a close relationship with through my life.",
     loveAdmire: "Ryan seems unusually versatile and gritty.",
     growthArea: "",
@@ -296,7 +296,7 @@ export const responses: Response[] = [
   {
     name: "Zane",
     impact: "Ryan is the most diligent friend I have--always trying to take care of others to the fullest. I see he rarely leaves situations as unfinished business and instead does what he can to resolve anything that's off or incomplete. If he needs to let folks down in one way, I see him rushing in to care for them in alternative ways. It's a super cool commitment to treating others right to watch.",
-    unforgettableMemory: "When we were high and thought Ziz was screaming at us in the hall and came up with a master plan to investigate but it was just a homeless lady and we were fried.",
+    unforgettableMemory: "When we thought Ziz was screaming at us in the hall and came up with a master plan to investigate but it was just a homeless lady.",
     whatToHear: "He's a healthy representation of non- avoidance for me. Seems he's figured out how to maintain boundaries while also engaging.",
     loveAdmire: "Laughing off folks' unhealthy absurd behavior as just that.",
     growthArea: "It might help him to train others up to be the people where the buck stops, rather than continuing to be the final say/decision maker on so much.",
@@ -312,7 +312,7 @@ export const chapters = [
     subtitle: 'A Message for You',
     content: [{
       name: "Sofia",
-      impact: "Ryan,\n\nWhat you're about to read is a collection of thoughts that represent just a fraction of the lives you've impacted and connected with. Each page holds the genuine affection and admiration of someone whose world is brighter because, in many ways, you've been a strong ground for people to lean on, a dingus to laugh with, and a catalyst for growth and joy in so many lives. I made this for you so you can look back on it in the future and laugh or cry at the absurdity and sweetness of the responses. To find friends on here you're still friends with and others that have dispersed. I want to give you everything, part of that is a sense of love and belonging, so here is a little dopamine boost to help.\n\nWith all my love and will to make Ryan feel like the most special boy in the world,\n\nSofia",
+      impact: "Ryan,\n\nWhat you're about to read is a collection of thoughts that represent just a fraction of the lives you've impacted and connected with. Each page holds the genuine affection and admiration of someone whose world is brighter because, in many ways, you've been a strong ground for people to lean on, someone to laugh with, and a catalyst for growth and joy in so many lives. I made this for you so you can look back on it in the future and laugh or cry at the absurdity and sweetness of the responses. To find friends on here you're still friends with and others that have dispersed. I want to give you everything, part of that is a sense of love and belonging, so here is a little dopamine boost to help.\n\nWith all my love and will to make Ryan feel like the most special boy in the world,\n\nSofia",
       unforgettableMemory: "",
       whatToHear: "",
       loveAdmire: "",
