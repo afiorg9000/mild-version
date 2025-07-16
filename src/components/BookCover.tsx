@@ -64,21 +64,21 @@ export const BookCover = ({ onStartReading }: BookCoverProps) => {
         <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
       </div>
       
-              {/* Floating particles effect */}
-        <div className="absolute inset-0 pointer-events-none">
-          {Array.from({ length: 20 }).map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-1 h-1 bg-amber-200/20 rounded-full animate-float"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 3}s`,
-                animationDuration: `${3 + Math.random() * 2}s`
-              }}
-            />
-          ))}
-        </div>
+      {/* Floating particles effect */}
+      <div className="absolute inset-0 pointer-events-none">
+        {Array.from({ length: 20 }).map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-amber-200/20 rounded-full animate-float"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+              animationDuration: `${3 + Math.random() * 2}s`
+            }}
+          />
+        ))}
+      </div>
     </div>
   );
 };
